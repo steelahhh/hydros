@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Platform.Theme.Hydros" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Base.Theme.Hydros" parent="Platform.Theme.Hydros">
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="Theme.Hydros" parent="Base.Theme.Hydros">
+    </style>
+</resources>
