@@ -33,5 +33,10 @@ tasks.withType<KotlinCompile>().configureEach {
 
 dependencies {
   implementation(projects.arch)
+  implementation(projects.ui)
+
+  implementation(libs.androidx.compose.accompanist.systemUi)
+  implementation(libs.androidx.compose.integration.activity)
   implementation(libs.androidx.compose.runtime)
+  implementation(libs.appyx.core)
 }

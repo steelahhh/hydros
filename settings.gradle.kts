@@ -13,6 +13,7 @@ dependencyResolutionManagement {
   repositories {
     google()
     mavenCentral()
+    maven("https://jitpack.io")
   }
 }
 
@@ -23,3 +24,5 @@ rootProject.name = "hydros"
 include(":app")
 
 include(":arch")
+
+include(":ui")

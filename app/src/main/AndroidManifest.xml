@@ -4,7 +4,8 @@
     package="app.hydros">
 
     <application
-        android:allowBackup="true"
+        android:name=".HydrosApp"
+        android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +15,12 @@
         android:theme="@style/Theme.Hydros"
         tools:targetApi="31">
 
-        <activity android:name=".MainActivity" android:exported="true" >
+        <activity
+            android:name=".RootActivity"
+            android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -54,7 +54,9 @@ androidx-compose-integration-activity = { module = "androidx.activity:activity-c
 androidx-compose-material-icons = { module = "androidx.compose.material:material-icons-core", version = "_" }
 androidx-compose-material-iconsExtended = { module = "androidx.compose.material:material-icons-extended", version = "_" }
 androidx-compose-material-material = { module = "androidx.compose.material:material", version = "_" }
-androidx-compose-material-material3 = { module = "androidx.compose.material3:material3", version = "1.0.0-alpha16" }
+androidx-compose-material-material3 = { module = "androidx.compose.material3:material3", version = "_" }
+
+androidx-compose-monet = { module = "com.github.Kyant0:Monet", version = "_" }
 
 androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", version = "_" }
 androidx-compose-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version = "_" }
