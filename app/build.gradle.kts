@@ -32,5 +32,6 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 dependencies {
+  implementation(projects.arch)
   implementation(libs.androidx.compose.runtime)
 }

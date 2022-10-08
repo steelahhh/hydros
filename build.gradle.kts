@@ -35,10 +35,10 @@ buildscript {
 }
 
 plugins {
-  alias(libs.plugins.io.gitlab.arturbosch.detekt)
-  alias(libs.plugins.com.diffplug.spotless) apply false
-  alias(libs.plugins.com.github.ben.manes.versions)
-  alias(libs.plugins.com.autonomousapps.dependency.analysis)
+  alias(libs.plugins.detekt)
+  alias(libs.plugins.spotless) apply false
+  alias(libs.plugins.versionsPlugin)
+  alias(libs.plugins.dependencyAnalysis)
 }
 
 configure<DetektExtension> {
@@ -142,7 +142,7 @@ subprojects {
     compileSdk = 33
 
     buildFeatures { compose = true }
-    composeOptions { kotlinCompilerExtensionVersion = libs.versions.androidx.compose.compiler.get() }
+    composeOptions { kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get() }
 
     compileOptions {
       sourceCompatibility = JavaVersion.VERSION_11
@@ -159,7 +159,7 @@ subprojects {
   pluginManager.withPlugin("com.android.library") {
     with(extensions.getByType<LibraryExtension>()) {
       commonAndroidConfig()
-      defaultConfig { minSdk = 21 }
+      defaultConfig { minSdk = 26 }
     }
 
     // Single-variant libraries
@@ -186,7 +186,7 @@ subprojects {
       }
       compileOptions { isCoreLibraryDesugaringEnabled = true }
     }
-    dependencies.add("coreLibraryDesugaring", libs.desugar.jdk.libs)
+    dependencies.add("coreLibraryDesugaring", libs.desugarJdkLibs)
   }
 }
 

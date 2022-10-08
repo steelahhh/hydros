@@ -1,3 +1,5 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
   repositories {
     gradlePluginPortal()
@@ -14,8 +16,10 @@ dependencyResolutionManagement {
   }
 }
 
-plugins { id("de.fayard.refreshVersions") version "0.50.2" }
+plugins { id("de.fayard.refreshVersions") version "0.40.2" }
 
 rootProject.name = "hydros"
 
 include(":app")
+
+include(":arch")
