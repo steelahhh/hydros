@@ -75,6 +75,8 @@ androidx-compose-ui-util = { module = "androidx.compose.ui:ui-util", version = "
 androidx-lifecycle-viewModel = { module = "androidx.lifecycle:lifecycle-viewmodel", version = "_" }
 androidx-lifecycle-viewModel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version = "_" }
 
+appyx-core = { module = "com.bumble.appyx:core", version = "_"}
+
 coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version = "_" }
 
 desugarJdkLibs = "com.android.tools:desugar_jdk_libs:1.1.6"

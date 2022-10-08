@@ -5,4 +5,9 @@ plugins {
 
 android { namespace = "app.hydros.arch" }
 
-dependencies {}
+dependencies {
+  api(libs.androidx.compose.runtime)
+  api(libs.androidx.compose.ui.ui)
+  api(libs.androidx.compose.ui.util)
+  api(libs.appyx.core)
+}
